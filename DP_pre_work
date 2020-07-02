@@ -1,0 +1,14 @@
+In what scenarios can it be beneficial to apply dynamic programming?
+When the recursive solution involves doing redundant calculations and the running time efficiency is exponential (or high).
+
+What are the differences between the memoization (top-down) and tabulation (bottom-up) approaches?
+Tabulation is iterative approach, while memoization is recursive.
+If the problem required all the original sub-problems to be solved, then tabulation is preferable. If only some of the subproblems need to solved, then memoization is preferable since only the sub-problems that are needed would be computed.
+
+
+Is there a relationship between the parameters of a recursive function and the corresponding memo table? What about between the time and space complexities of a top-down approach?
+
+The recursive function call and the expression for computing the next entry of the table (in tabulation) are similar. If the problem requires solving N problems or N computations, recursive function typically uses N in the expression. In tabulation the function to compute the next entry of the table uses a counter to maintain entries on the table, but the iteration runs N times.
+
+Memoization makes a trade-off by saving time at the cost of using memory to store the memo.
+
